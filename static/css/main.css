@@ -112,3 +112,7 @@ footer p {
   font-family: 'Source Code Pro', monospace;
   text-align: right;
 }
+
+code:not([class]) {
+  color: var(--highlight-color);
+}
