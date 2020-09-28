@@ -3,11 +3,13 @@
 
 /* Markdown */
 :root {
+  --bright-white-color:#f3f3f3;
   --white-color:#c0c0c0;
   --background-color: #1d1d1d;
   --background-dark-color: #0f0f0f;
   --highlight-color:#F92672;
   --border-color:#66D9EF;
+  --bright-alt-color: #f5eda9;
   --alt-color: #E6DB74;
   --dark-alt-color: #AE81FF;
 }
@@ -41,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color) !important;
 }
 
 header {
@@ -121,4 +123,12 @@ code:not([class]) {
   padding: 1px 5px 2px 5px;
   background-color: var(--background-dark-color);
   color: var(--highlight-color);
+}
+
+em, strong {
+  color: var(--bright-white-color);
+}
+
+blockquote em, blockquote strong {
+  color: var(--bright-alt-color);
 }
